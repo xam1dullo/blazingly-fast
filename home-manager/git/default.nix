@@ -3,8 +3,8 @@
     enable = true;
     lfs.enable = true;
 
-    userName = "Shakhzod Kudratov";
-    userEmail = "shakhzodkudratov@gmail.com";
+    userName = "Khamidullo Khudoyberdiyev";
+    userEmail = "khamidullo@gmail.com";
 
     signing = {
       signByDefault = true;

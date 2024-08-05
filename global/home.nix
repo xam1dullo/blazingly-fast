@@ -14,8 +14,8 @@
 
   home = {
     stateVersion = "24.05";
-    username = "shakhzod";
-    homeDirectory = "/home/shakhzod";
+    username = "pro";
+    homeDirectory = "/home/pro";
     enableNixpkgsReleaseCheck = false;
   };
 

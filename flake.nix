@@ -6,8 +6,9 @@
     nixpkgs-2311.url = "github:nixos/nixpkgs?ref=nixos-23.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+
     home-manager = {
-      url = "github:nix-community/home-manager/master";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     astronvim = {
@@ -51,15 +52,25 @@
 
       homeManagerModules = import ./home-manager;
       homeConfigurations = {
-        "shakhzod@workpc" = home-manager.lib.homeManagerConfiguraiton {
+        # "pro@workpc" = home-manager.lib.homeManagerConfiguraiton {
+        #   pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        #   extraSpecialArgs = {
+        #     inherit inputs outputs;
+        #   };
+        #   modules = [
+        #     ./workpc/home.nix
+        #   ];
+        # };
+        "pro" = home-manager.lib.homeManagerConfiguraiton {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
             inherit inputs outputs;
           };
           modules = [
-            ./workpc/home.nix
+            ./laptop/home.nix
           ];
         };
+
       };
     };
 }

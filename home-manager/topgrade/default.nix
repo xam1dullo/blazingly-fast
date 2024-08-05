@@ -16,7 +16,7 @@
       };
       commands = {
         "Nix" = "nix-channel --update && nix-env -u '*'";
-        "Home Manager" = "home-manager switch --flake github:shakhzodkudratov/blazingly-fast";
+        "Home Manager" = "home-manager switch --flake github:xam1dullo/blazingly-fast";
       };
     };
   };

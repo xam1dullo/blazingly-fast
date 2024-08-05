@@ -12,7 +12,7 @@
     shellAliases = { };
 
     initExtra = ''
-      export BLAZINGLY_FAST="/home/shakhzod/blazingly-fast"
+      export BLAZINGLY_FAST="/home/xam1dullo/blazingly-fast"
       export PATH=$PATH:$HOME/.local/share/JetBrains/Toolbox/scripts:$HOME/.cargo/bin
       alias avim="NVIM_APPNAME=astronvim nvim"
       alias zshrc="avim $BLAZINGLY_FAST/home-manager/zsh/default.nix"
