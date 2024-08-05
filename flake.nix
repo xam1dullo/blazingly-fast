@@ -61,7 +61,7 @@
         #     ./workpc/home.nix
         #   ];
         # };
-        "pro" = home-manager.lib.homeManagerConfiguraiton {
+        "pro" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
           extraSpecialArgs = {
             inherit inputs outputs;
